@@ -44,18 +44,18 @@ public class InstallActivity extends AppCompatActivity {
                                 if (installedPackageInfo.versionCode >= apkPackageInfo.versionCode) {
                                     // 清理临时文件
                                     deleteTempFile(newApkPath);
-                                    appendMessage("已安装的应用版本高于或等于当前安装包，取消安装。");
+                                    appendMessage("拒绝降级，从我做起！请先卸载旧版！");
                                     return; // 取消安装
                                 }
                             }
                         }
                     }
                     // 显示正在执行的命令
-                    appendMessage("正在执行命令: pm install " + newApkPath);
+                    appendMessage("正在执行目标: pm install " + newApkPath);
                     // 执行 ADB 安装命令
                     executeInstallCommand(newApkPath);
                 } else {
-                    appendMessage("获取包名失败！");
+                    appendMessage("包异常！");
                 }
             } else {
                 appendMessage("复制文件失败！");
@@ -106,9 +106,9 @@ public class InstallActivity extends AppCompatActivity {
         if (apkFile.exists()) {
             boolean deleted = apkFile.delete();
             if (deleted) {
-                appendMessage("临时文件已删除。");
+                appendMessage("安装包已删除。");
             } else {
-                appendMessage("删除临时文件失败。");
+                appendMessage("删除安装包失败。");
             }
         }
     }
