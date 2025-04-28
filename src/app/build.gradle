@@ -9,7 +9,7 @@ android {
     compileSdk 33
     
     defaultConfig {
-        applicationId "rj.re-huadows"
+        applicationId "rj.rehuadows"
         minSdk 21
         targetSdk 33
         versionCode 1
