@@ -60,14 +60,6 @@ public class HomeFragment extends Fragment {
             
                 
                 });
-           extraButton2.setOnClickListener(v ->{
-            Intent intent = new Intent(getActivity(), AccessibilityPermissionManagerActivity.class);
-    startActivity(intent);
-           
-           
-            
-                
-                });
 
         GridLayout squareContainer = view.findViewById(R.id.squareContainer);
         loadSquareData(squareContainer);
