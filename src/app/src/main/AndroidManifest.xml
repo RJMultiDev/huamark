@@ -23,7 +23,7 @@
             android:name="MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
+
                 <action
                     android:name="android.intent.action.MAIN" />
                 <category
@@ -37,8 +37,7 @@
         <activity android:name=".Appmanage" />
         <activity android:name=".AppOperationActivity" />
         <activity android:name=".InputMethodSwitcherActivity" />
-        
-        <activity android:name=".AccessibilityPermissionManagerActivity" />
+
 
         <provider
     android:name="androidx.core.content.FileProvider"
