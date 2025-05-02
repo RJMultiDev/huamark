@@ -50,15 +50,10 @@ public class HomeFragment extends Fragment {
         setRoundedImage(imageButtonRight, R.drawable.sample_image);
 
         LinearLayout extraButton1 = view.findViewById(R.id.extraButton1);
-        LinearLayout extraButton2 = view.findViewById(R.id.extraButton2);
 
         extraButton1.setOnClickListener(v ->{
             Intent intent = new Intent(getActivity(), Appmanage.class);
     startActivity(intent);
-           
-           
-            
-                
                 });
 
         GridLayout squareContainer = view.findViewById(R.id.squareContainer);
