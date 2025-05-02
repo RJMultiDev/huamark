@@ -72,7 +72,8 @@
                      android:layout_marginStart="8dp"
                      android:text="应用管理"
                      android:layout_gravity="center" />
-
+       </LinearLayout>
+       </LinearLayout>
 
         <TextView
              android:layout_height="wrap_content"
